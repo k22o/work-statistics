@@ -1,5 +1,7 @@
+- characteristic-value: 特性値
 - core-theorem: 中心極限定理・大数法則
 - distribution: 確率分布について
 - statistical-estimation: 統計推定
-- sratistical-test: 統計検定
+- statistical-test: 統計検定
+- index: 統計における指標
 - model: モデル

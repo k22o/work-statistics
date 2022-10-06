@@ -8,7 +8,8 @@
 | 生存関数(SF)  | $$P(x>a) = \int_af(x)dx$$ | 上側 |
 | 確率質量関数(PMF)  | | 離散型確率変数にその値をとる確率を対応させる関数 |
 |特性関数(CF)| $$ \phi_x(t) = E[e^{itx}] $$ | 別ファイル参照|
-|積率母関数|$$ M_X(t) = E[e^{tX}] = \int e^{tx}dF(x) $$||
+|確率母関数|$$ M_X(s) = E[s^{X}] = \int s^{x}f(x)dx $$||
+|積率母関数|$$ M_X(\theta) = E[e^{\theta X}] = \int e^{\theta x}f(x)dx $$||
 
 
 ## 離散型
@@ -19,6 +20,7 @@ $$ P(X=x) = {}_n C_x p^x(1-p)^{n-x} $$
 - $X$ ~ $B(n, p)$
 - ベルヌーイ試行が従う分布である。
 - ある事象が発生する確率を$p$ 試行回数$n$
+- 再生性を有する -> X + Y ~ $B(n_1+n_2, p)$
 
 ### Poisson分布
 $$ P(X=x) = e^{-\lambda} \frac{\lambda^x}{x!} $$
@@ -27,6 +29,8 @@ $$ P(X=x) = e^{-\lambda} \frac{\lambda^x}{x!} $$
 - すなわち、件数は多いが発生確率が低く、$np$が中程度の場合に見られる
 - たとえば、単位時間当たりに客が平均$\lambda$で来る場合は、人数はpoisson分布で与えられる。
 - 「単位時間内にx人が来る確率」
+- 再生性を有する -> X + Y ~ $Po(\lambda_1 + \lambda_2)$
+
 
 ### 幾何分布 (geometric distribution)
 $$ P(X=x) = p(1-p)^{x-1} $$
@@ -54,7 +58,7 @@ $$ f(x) = \begin{cases}
 $$ f(x) = \frac{1}{\sqrt{2\pi}\sigma} exp(-\frac{(x-\mu)^2}{2\sigma^2})$$
 - $X$ ~ $N(\mu, \sigma^2)$
 - 特に $N(0, 1)$ を標準正規分布という
-- 再生性を有する
+- 再生性を有する -> aX + bY + c ~ $B(a\mu_1 + b\mu_2 + c, a^2\sigma_1^2 + b^2\sigma_2^2)$
 
 ### 指数分布 (exponential distribution)
 $$ f(x) = \begin{cases} 
