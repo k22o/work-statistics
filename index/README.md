@@ -10,10 +10,13 @@
 | 量 | $n_{0i}$ | $n_{ti}$ |
 
 このとき、ラスパイレス係数$P_L$、パーシェ係数$P_P$、フィッシャー係数$P_F$は以下で表される。
+
 $$
-P_L = \frac{\sum_i p_{ti}n_{t0}}{\sum_i p_{oi}n_{t0}}* 100\\
-P_P = \frac{\sum_i p_{ti}n_{ti}}{\sum_i p_{oi}n_{ti}} * 100\\
-P_F = \sqrt{P_L P_P} 
+\begin{aligned} 
+P_L &= \frac{\sum_i p_{ti}n_{t0}}{\sum_i p_{oi}n_{t0}}* 100 \\\\
+P_P &= \frac{\sum_i p_{ti}n_{ti}}{\sum_i p_{oi}n_{ti}} * 100 \\\\
+P_F &= \sqrt{P_L P_P} 
+\end{aligned} 
 $$
 
 いずれの場合も、$P>100$ なら、全体として値が上昇したことが分かる。
