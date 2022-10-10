@@ -44,10 +44,10 @@ $$ Z \equiv \frac{\bar{X} - \mu}{\sigma/ \sqrt{n}} \sim N(0, 1)$$
 
 $$P(\bar{X} - z_{\alpha/2}\sqrt{\sigma^2/n} \leq \mu \leq \bar{X} + z_{\alpha/2}\sqrt{\sigma^2/n}) = 1 - \alpha$$
 
-この区間、$[\bar{X} \pm z_{\alpha/2}\sqrt{\sigma^2/n}]$　を、信頼係数 $100(1-\alpha)$%の区間とよび、上限下限を信頼上限信頼下限と呼ぶ。 
+この区間、 $[\bar{X} \pm z_{\alpha/2}\sqrt{\sigma^2/n}]$　を、信頼係数 $100(1-\alpha)$%の区間とよび、上限下限を信頼上限信頼下限と呼ぶ。 
 
 
-一般に、$\mu$ も $\sigma$ も未知数である。ここでは、$\mu$ を推定したいので、$\sigma$ を既知の値である $s$ に置き換えて考える。
+一般に、 $\mu$ も $\sigma$ も未知数である。ここでは、 $\mu$ を推定したいので、 $\sigma$ を既知の値である $s$ に置き換えて考える。
 この値をt比 / Studnet比と呼ぶ。t比は、以下のt分布に従う。
 (定義にそって変換すると、t分布の定義を満たすことがわかるはず。)
 
@@ -60,10 +60,12 @@ $$P(\bar{X} - t_{\alpha/2}(n-1)\sqrt{s^2/n} \leq \mu \leq \bar{X} + t_{\alpha/2}
 となる。ただし、 $t_{\alpha/2}(n-1)$ は、自由度 $n-1$ のt分布において、 $P(X \geq t_{\alpha/2}(n-1)) = \alpha/2$ となる値である。
 
 ## 母平均の差 $\mu_1-\mu_2$ の区間推定 
-2つの統計量 $\bar{X} \sim N(\mu_1, \sigma^2_1/n_1), \bar{Y} \sim N(\mu_2, \sigma^2_2/n_2$ について、以下が成り立つ。
+2つの統計量 $\bar{X} \sim N(\mu_1, \sigma^2_1/n_1), \bar{Y} \sim N(\mu_2, \sigma^2_2/n_2)$ について、以下が成り立つ。
+
 $$ \bar{X} - \bar{Y} \sim N(\mu_1-\mu_2, \sigma^2_1/n_1 + \sigma^2_2/n_2)$$
 
 正規分布にしたがうことから、基準化変量を考えれば、母平均の推定と同様にして、以下の信頼係数100(1-α)%の信頼区間を得る。
+
 $$[(\bar{X} - \bar{Y}) \pm z_{\alpha/2}\sqrt{\sigma^2_1/n_1 + \sigma^2/n_2}]$$
 
 次に、 $\sigma$ が未知として、 $s$ に置き替えることを考える。
