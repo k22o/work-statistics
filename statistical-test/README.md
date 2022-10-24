@@ -127,7 +127,7 @@ $$
 |総平方和 $S_T$ | $\sum_{ijk} (y_{ijk}-\bar{y})^2$ | $an-1$ | 
 |要因Aの水準平方和 $S_A$ | $bn\sum_i (\bar{y_{A_i}} - \bar{y})^2 $ | $a-1$ |
 |要因Bの水準平方和 $S_B$ | $an\sum_j (\bar{y_{B_j}} - \bar{y})^2 $ | $b-1$ |
-|AxBの平方和 $S_{AB}$ | $n\sum_{ij} ((\bar{y}_{A_i, B_j} - \bar{y}) - (\bar{y}_{A_i} - \bar{y}) - (\bar{y}_{B_j} - \bar{y}))^2$ | $(a-1)(b-1)$ |
+|AxBの平方和 $S_{AB}$ | $n\sum_{ij} (\bar{y_{A_i, B_j}} - \bar{y_{A_i}} - \bar{y_{B_j}} + \bar{y})^2$ | $(a-1)(b-1)$ |
 |誤差平方和 $S_E$ | $\sum_{ijk} (y_{ijk} - \bar{y}_{A_i, B_j})^2$ | $abn-1$ |
 
 水準平方和は、要因aについて異なる群間での差を表現し、誤差平方和は、群内での誤差を全群で合計したものである。
