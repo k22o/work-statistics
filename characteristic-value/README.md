@@ -33,7 +33,7 @@
 ### 不偏推定量
 
 $E(\bar{X}) = \mu$ や $E(s^2) = \sigma^2$ は、推定値(標本値)の平均が、真なる値 (母集団) に一致している。
-一般に、推定値$T$、真値$\theta$について、 $E(T) = \theta$ を満たす場合、 $T$ を $\theta$ の不偏推定量と呼ぶ。<br>
+一般に、推定値 $T$ 、真値 $\theta$ について、 $E(T) = \theta$ を満たす場合、 $T$ を $\theta$ の不偏推定量と呼ぶ。<br>
 不偏推定量の中で最も分散が小さいものを、最小分散不偏推定量 (minimum variance unbiased estimator) と呼ぶ
 
 $$\hat{T} = \argmin_T V[(T-\theta)^2]$$
