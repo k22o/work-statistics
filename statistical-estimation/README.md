@@ -34,7 +34,7 @@
 
 標本平均は、前述の通り、以下の分布に従う。
 
-$$\bar{X} \sim N(\mu, \frac{\sigma}{\sqrt{n}})$$
+$$\bar{X} \sim N(\mu, \frac{\sigma^2}{n})$$
 
 この基準化変量は、当然、標準正規分布となる。
 
