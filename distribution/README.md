@@ -83,6 +83,24 @@ $$ f(x) = \begin{cases}
 - 幾何分布の連続版
 - PDFが「x時間後に次に客がくる確率」だとしたら、CDFは「x時間以内に客が来る確率」といえる
 
+### beta分布
+ここでは、第一種ベータ分布のみ記載する。
+
+$$
+f(x;\alpha,\beta) = \frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)} \\
+B(\alpha, \beta) = \int_0^1 t^{\alpha-1}(1-t)^{\beta-1}dt
+$$
+
+- $X \sim Beta(\alpha, \beta)$
+- ベータ分布は二項分布と関連が深い。表の出る確率 $x$ が不明であるとき、 $α-1$ 回成功、 $β-1$ 回失敗した際に、 $Beta(\alpha, \beta)$ に従う。
+- ベイズ統計において、事前確率分布として用いられることが多い。
+- 厳密には、事前分布が一様分布かつ尤度が二項分布なら、事後分布はベータ分布になる
+- $Beta(1,1)$ は一様分布に相当する。
+
+
+
+
+
 
 ## 期待値と分散のまとめ
 | 分布 | 期待値 | 分散 |
@@ -93,6 +111,7 @@ $$ f(x) = \begin{cases}
 | 正規分布 | $\mu$ | $\sigma^2$ |
 | 指数分布  | $\frac{1}{\lambda}$ | $\frac{1}{\lambda^2}$ |
 
+(注) 連続型確率変数の場合、最頻値は確率密度関数の極値に相当する。
 
 ## 備考
 ### 無記憶性
@@ -121,3 +140,19 @@ $\frac{dF_X(x)}{dx} = f(x)$ であるので、
 $$
 \phi_X(t) = \int_{-\infin}^{-\infin} e^{itx} f_X(x)dx
 $$
+
+## 多変量正規分布
+確率変数 $\boldsymbol{X} = (X_1, X_2, ...,X_n)^T$ について、
+以下のように多変量正規分布 $N(\boldsymbol{\mu}, \Sigma)$ を規定できる。
+
+$$
+f(\boldsymbol{x}) = \frac{1}{\sqrt{(2\pi)^n}\sqrt{det\Sigma}} exp(-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu})^T\Sigma^{-1}(\boldsymbol{x}-\boldsymbol{\mu})) \\
+$$
+
+ただし、 $\boldsymbol{\mu} = (\mu_1, \mu_2, ..., \mu_n)^T$ , $\Sigma(i,i) = \sigma_i^2$, $\Sigma(i,k) = \rho_{ij} \sigma_i\sigma_j$
+
+とする。
+
+このとき、周辺分布は、$X_i \sim N(\mu_i, \sigma_i)$ である。
+この確率密度関数を $f(x_i)$ とおけば、
+また、条件付き分布 $P(\boldsymbol{X}|X_i=x_i)$ は、確率密度関数 $f(\boldsymbol{x}) / f(x_i)$ から求めることができる。 
