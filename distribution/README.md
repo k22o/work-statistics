@@ -153,6 +153,6 @@ $$
 
 とする。
 
-このとき、周辺分布は、$X_i \sim N(\mu_i, \sigma_i)$ である。
+このとき、周辺分布は、 $X_i \sim N(\mu_i, \sigma_i)$ である。
 この確率密度関数を $f(x_i)$ とおけば、
 また、条件付き分布 $P(\boldsymbol{X}|X_i=x_i)$ は、確率密度関数 $f(\boldsymbol{x}) / f(x_i)$ から求めることができる。 
