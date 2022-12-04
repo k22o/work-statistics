@@ -157,3 +157,12 @@ $$
 このとき、周辺分布は、 $X_i \sim N(\mu_i, \sigma_i)$ である。
 この確率密度関数を $f(x_i)$ とおけば、
 また、条件付き分布 $P(\boldsymbol{X}|X_i=x_i)$ は、確率密度関数 $f(\boldsymbol{x}) / f(x_i)$ から求めることができる。 
+
+特に、2変数の場合は、
+
+$$
+\begin{aligned}
+E[X_2 | X_1 = x_1] &= \mu_2 + \rho \frac{\sigma_2}{\sigma_1} (x_1 - \mu_1) \\
+V[X_2 | X_1 = x_1] &= \sigma_2^2 (1-\rho^2)
+\end{aligned}
+$$
