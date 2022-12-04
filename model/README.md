@@ -1,8 +1,9 @@
 # モデル
 ## 一般線形モデル (general liner model; GLM)
-- 以下の式で表現されるモデル。
-$$\bold{y} = X\bold{\beta} + \bold{\epsilon}$$
-- $\bold{\beta}$は回帰係数、$\bold{\epsilon}$は残差を表しており、線形回帰分析はこれに当たる。
+
+$$\boldsymbol{y} = X\boldsymbol{\beta} + \boldsymbol{\epsilon}$$
+
+- $\boldsymbol{\beta}$ は回帰係数、 $\boldsymbol{\epsilon}$ は残差を表しており、線形回帰分析はこれに当たる。
 - ANOVAやt検定などにも含まれる考え方。
 - 一般線形モデルでは、残差Eが正規分布に従うという仮定の下、最小二乗法によってEを最小化するようにしている (線形回帰では、最小二乗法も最尤法も辿り着く先は一緒)。
 
