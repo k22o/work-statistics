@@ -20,10 +20,10 @@
 
 $$ P(X=x) = {}_n C_x p^x(1-p)^{n-x} $$
 
-- $X$ ~ $B(n, p)$
+- $X$ ~ $Bin(n, p)$
 - ベルヌーイ試行が従う分布である。
 - ある事象が発生する確率を $p$ 試行回数 $n$
-- 再生性を有する -> $X + Y \sim B(n_1+n_2, p)$
+- 再生性を有する -> $X + Y \sim Bin(n_1+n_2, p)$
 
 ### Poisson分布
 
@@ -92,11 +92,12 @@ f(x;\alpha,\beta) = \frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)} \\
 B(\alpha, \beta) = \int_0^1 t^{\alpha-1}(1-t)^{\beta-1}dt
 $$
 
-- $X \sim Beta(\alpha, \beta)$
-- ベータ分布は二項分布と関連が深い。表の出る確率 $x$ が不明であるとき、 $α-1$ 回成功、 $β-1$ 回失敗した際に、 $Beta(\alpha, \beta)$ に従う。
+- $X \sim Be(\alpha, \beta)$
+- 事前分布を $Be(\alpha, \beta)$ とする。尤度が二項分布 $Bin(a, b)$ 
+ に従うとき、事後分布は、$Be(\alpha + a, \beta + b)$ に従う。
 - ベイズ統計において、事前確率分布として用いられることが多い。
 - 厳密には、事前分布が一様分布かつ尤度が二項分布なら、事後分布はベータ分布になる
-- $Beta(1,1)$ は一様分布に相当する。
+- $Be(1,1)$ は一様分布に相当する。
 
 
 
@@ -111,6 +112,7 @@ $$
 | 幾何分布  | $\frac{1}{p}$ | $\frac{1-p}{p^2}$ |
 | 正規分布 | $\mu$ | $\sigma^2$ |
 | 指数分布  | $\frac{1}{\lambda}$ | $\frac{1}{\lambda^2}$ |
+| beta分布  | $\frac{\alpha}{\alpha + \beta}$ | $\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$ |
 
 (注) 連続型確率変数の場合、最頻値は確率密度関数の極値に相当する。
 
