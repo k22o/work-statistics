@@ -53,5 +53,5 @@ data = []
 for i in range(5000):
     data.append(model.step())
 
-plt.hist(data)
+plt.hist(data[1000:-1]) #はじめの1000個は初期値の影響を除くために捨てる
 plt.show()
