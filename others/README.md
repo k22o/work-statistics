@@ -74,7 +74,7 @@ $\hat{\theta}(X)$ という推定値を得ることを考える。
 
 $$
 \begin{aligned}
-\bar{\hat{\theta}}^\* &= \frac{1}{n}\sum^n_{i=0} \hat{\theta}^\*_j \\
+\bar{\hat{\theta}}^\* &= \frac{1}{n-1}\sum^n_{i=0} \hat{\theta}^\*_j \\
 s(X) &= \sqrt{\frac{n-1}{n}\sum(\hat{\theta}^\*_j -\bar{\hat{\theta}^\*})^2} \\
 bias &= (n-1)(\bar{\hat{\theta}}^\* - \hat{\theta}) \\
 \end{aligned}
