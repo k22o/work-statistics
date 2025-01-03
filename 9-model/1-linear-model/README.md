@@ -1,4 +1,5 @@
 # モデル
+
 ## 一般線形モデル (general liner model; GLM)
 
 $$\boldsymbol{y} = X\boldsymbol{\beta} + \boldsymbol{\epsilon}$$
@@ -7,9 +8,8 @@ $$\boldsymbol{y} = X\boldsymbol{\beta} + \boldsymbol{\epsilon}$$
 - ANOVAやt検定などにも含まれる考え方。
 - 一般線形モデルでは、残差Eが正規分布に従うという仮定の下、最小二乗法によってEを最小化するようにしている (線形回帰では、最小二乗法も最尤法も辿り着く先は一緒)。
 
-
-
 ## 一般化線形モデル (generalized liner model; GLM)
+
 一般線形モデルで仮定していた、残差の正規分布性を取り払い、任意の確率分布で表現できるようにしたもの。
 
 Yが指数型分布族の確率分布に従うとする。指数型分布族は、BinやPo, N, ガンマなどの分布を含む。
@@ -23,10 +23,3 @@ $$
 $$
 g(\pi) = \alpha + \boldsymbol{\beta}^T \boldsymbol{x}
 $$
-
-
-## 混合モデル (mixed model)
-
-
-
-## 対数線形モデル
