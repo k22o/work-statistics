@@ -1,7 +1,13 @@
-- characteristic-value: 特性値
-- core-theorem: 中心極限定理・大数法則
-- distribution: 確率分布について
-- statistical-estimation: 統計推定
-- statistical-test: 統計検定
-- index: 統計における指標
-- model: モデル
+# 統計
+
+- 1-basic-theorem: 特性値・基本定理
+- 2-correlation: 相関
+- 3-index: 指標
+- 4-distribution: 分布
+- 5-statistical-estimation: 推定
+- 6-statistical-test: 検定
+- 7-sampling: サンプリング手法
+- 8-multivariate-analysis: 多変量解析
+- 9-model: モデリング
+- others: その他
+- queueing-theory: 待ち行列理論
